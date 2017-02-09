@@ -8,7 +8,6 @@ public class Unorderlist
 {	 
     public static void main(String[] args) 
     {
-
     	Scanner sc=new Scanner(System.in);
     	String[] a = new String[100];
     	System.out.println("Enter The String");
@@ -17,8 +16,8 @@ public class Unorderlist
 	        // convert array to LinkedList
 	        LinkedList ll = new LinkedList(Arrays.asList(a));
 	 
-	        // iterate over each element in LinkedList and show 
-	        //	what is in the list.
+//	         iterate over each element in LinkedList and show 
+//	        	what is in the list.
 	        Iterator iterator = ll.iterator();
 	        while (iterator.hasNext()) {
 	            // Print element to console
