@@ -5,17 +5,17 @@ public class Bubble_Sort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] unsorted = new int[5];
+		int[] arr = new int[5];
 		Scanner sc=new Scanner(System.in);
 		for(int i=0;i<5;i++)
-			unsorted[i]=sc.nextInt();
+			arr[i]=sc.nextInt();
 		
-		System.out.println("Before sorting : " + Arrays.toString(unsorted));
-		bubbleSort(unsorted);
-		System.out.println("After sorting : " + Arrays.toString(unsorted)); 
+		System.out.println("Before sorting : " + Arrays.toString(arr));
+		bubbleSort(arr);
+		System.out.println("After sorting : " + Arrays.toString(arr)); 
 		}
 
-		public static void bubbleSort(int[] unsorted) 
+		public static void bubbleSort(int[] arr) 
 		{
 			int n=5;
 			int temp=0;
@@ -23,11 +23,11 @@ public class Bubble_Sort {
 			{  
                 for(int j=1;j<(n-i);j++)
                 {  
-                	if(unsorted[j-1]>unsorted[j])
+                	if(arr[j-1]>arr[j])
                 	{  
-                		   temp = unsorted[j-1];  
-                		   unsorted[j-1]=unsorted[j];  
-                		   unsorted[j]=temp; 
+                		   temp = arr[j-1];  
+                		   arr[j-1]=arr[j];  
+                		   arr[j]=temp; 
                 	}
                 }
             }
