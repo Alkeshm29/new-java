@@ -1,0 +1,46 @@
+{
+  "Inventory": [
+    {
+      "Rice": [
+        {
+          "name": "Ricetype1",
+          "weight": 15,
+          "price": 20
+        },
+        {
+          "name": "Ricetype2",
+          "weight": 10,
+          "price": 30
+        },
+      ]
+    },
+    {
+      "Pulses": [
+        {
+          "name": "Pluse1",
+          "weight": 20,
+          "price": 40
+        },
+        {
+          "name": "Pluse2",
+          "weight": 15,
+          "price": 50
+        },
+      ]
+    },
+    {
+      "Wheats": [
+        {
+          "name": "Wheats1",
+          "weight": 16,
+          "price": 20
+        },
+        {
+          "name": "Durum",
+          "weight": 20,
+          "price": 25
+        },
+      ]
+    }
+  ]
+}
