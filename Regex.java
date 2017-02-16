@@ -14,13 +14,13 @@ public class Regex {
 			String in = "";
 			Scanner sc=new Scanner(System.in);
 			System.out.println(in);
-			String firstName = "xyz", contact;
+			String firstName = " ", contact;
 			System.out.println("\nEnter Full name:");
 			String name = sc.nextLine();
 			boolean checkName = Pattern.matches("[A-Z][a-zA-Z]*[\\s][A-Z][a-zA-Z]*[\\s][A-Z][a-zA-Z]*",name);
 			if (!checkName) 
 			{
-				System.out.println("Invalid format ...\nPlease Enter in Camel case(Abc Xyz) Format");
+				System.out.println("Invalid format ...");
 				System.exit(0);
 				
 			}
@@ -30,22 +30,24 @@ public class Regex {
 				firstName = fname[0];
 			}
 
-			System.out.println("Please Enter Mobile Number:");
+			System.out.println("Enter Mobile Number:");
 			contact = sc.nextLine();
 			boolean checkContact = Pattern.matches("[789]{1}\\d{9}",contact);
 			if (!checkContact) {
-				System.out.println("Invalid Contact Number....");
+				System.out.println("Invalid Number..");
 				System.exit(0);
 			}
-			DateFormat DateFormat = new SimpleDateFormat("dd/MM/yyyy");
-			String date = DateFormat.format(new Date());
-
+			DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+			String date = df.format(new Date());
+			System.out.println(date);
+			
 			in = in.replace("<<name>>", firstName);
 			in = in.replaceAll("<<full name>>", name);
 			in = in.replace("xxxxxxxxxx", contact);
 			in = in.replace("01/01/2016", date);
 			System.out.println(in);
 
+			
 		}
 
 }
