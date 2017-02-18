@@ -63,6 +63,3 @@ class Empl {
         return "Name: "+this.name+"-- Salary: "+this.salary;
     }
 }
-
-/*See more at:http:// www.java2novice.com/java-collections-and-util
- */
