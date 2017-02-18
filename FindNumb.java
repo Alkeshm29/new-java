@@ -2,41 +2,36 @@ import java.util.Scanner;
 
 public class FindNumb {
 
-	public static void main(String[] args) 
-	{
-		// TODO Auto-generated method stub
-		System.out.println("Enter Number you want to");
-		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		int [] arr=new int[n];
-		int pow=(int)Math.pow(2, n);
-		System.out.println("THe range of your num is 0 to "+pow);
-		int last=pow,first=0;
-		char ch;	
-		//if("No")
-		while(1)
-		{
-			int mid=(first+last)/2;
-			switch(ch)
-			{
-				case 'y': 
-					last = mid - 1;
-					break;
-				case 'n': 	
-					first = mid+1;
-					break;
+	public static void main(String[] args) {
+		int i;
+		boolean ch;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter no of steps");
+		int n = sc.nextInt();
+		int result = (int) Math.pow(2, n);
+		System.out.println("Remider num between 0 to " + result);
+		int lower = 1;
+		int upper = result;
+		int mid;
+		for (i = 1; i < n; i++) {
+			mid = (upper + lower) / 2;
+			System.out.println("if no between "+(lower-1) + " to " + (mid - 1));
+			System.out.println("if Present then type -true not then -false");
+			ch = sc.nextBoolean();
+			
+			if (ch) {
+				upper = mid - 1;
+			} else {
+				lower = mid + 1;
 			}
 		}
-		
-		
-		
-		/*System.out.println("Please enter "+n+" number..");
-		for(int i=0;i<n;i++)
-		{
-			arr[i]=sc.nextInt();
-		}*/
-		
-		
+		System.out.println("is u no " + (upper));
+		ch = sc.nextBoolean();
+		if (ch) {
+			System.out.println("u r no" + (lower));
+		} else
+			System.out.println(" u r no is" + (upper));
+		System.out.println("u r answer in steps" + i);
 	}
 
 }

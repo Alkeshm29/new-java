@@ -16,11 +16,13 @@ public class Tripls {
 			for (int j = i + 1; j < n; j++) {
 				for (int k = j + 1; k < n; k++) {
 					if (arr[i] + arr[j] + arr[k] == 0) {
-						System.out.println("Given pair is Tripl" + arr[i] + arr[j] + arr[k]);
+						System.out.println("Given pair is Tripl=" + arr[i]+" " + arr[j] +" "+ arr[k]);
 					}
+					
 				}
 			}
 		}
+		sc.close();
 	}
 
 }

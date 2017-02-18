@@ -38,7 +38,7 @@ public class JsonInv {
 					JSONObject Arrobject = (JSONObject) Arritem.get(j);
 					// Gets the name from the json file
 
-					System.out.println("Name : " + Arrobject.get("name"));
+				 	System.out.println("Name : " + Arrobject.get("name"));
 					// Gets the weight from the json file
 					long weight = Long.parseLong(Arrobject.get("weight").toString());
 					System.out.println("Weight :" + weight + " Kg");
