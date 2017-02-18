@@ -1,5 +1,6 @@
 package Collection;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 
@@ -33,11 +34,27 @@ public class LinkList {
 			System.out.println("List afyer Remove"+l);
 			
 			System.out.println("Size of list is="+l.size());
-			
+			//Sort
 			Collections.sort(l);
 			System.out.println("after sort"+l);
+			//Get
+			System.out.println("using get="+l.get(2));
+			//Update
+			System.out.println("Update f="+l.set(5,"XX")+":"+l);
+			//Searching
+			if(l.contains("B"))
+				System.out.println("B is present at "+l.indexOf("B"));
+			else 
+				System.out.println("Element is not found");
+			Collections.reverse(l);
+			System.out.println("Reverse List"+l);
 			
-			
+			Collections.shuffle(l);
+			System.out.println("After Shuffle="+l);
+			//Copying one list into another
+//			LinkedList<String> cp=new LinkedList<String>();
+//			Collections.copy(cp, l);
+//			System.out.println("New List"+cp);
 	}
 
 }
